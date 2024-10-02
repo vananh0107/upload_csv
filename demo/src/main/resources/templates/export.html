@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Export CSV</title>
+</head>
+<body>
+
+<h2>Export Data to CSV</h2>
+
+<form th:action="${formAction}" method="post" onsubmit="enableDownloadButton();">
+    <button type="submit">Export</button>
+</form>
+<br/>
+<br/>
+<br/>
+<div>
+    <form th:action="${downloadAction}" method="get">
+        <button id="downloadButton" type="submit" >Download CSV</button>
+    </form>
+</div>
+
+</body>
+</html>
