@@ -57,8 +57,8 @@ public class ClassRoomController {
 
     @GetMapping("/export")
     public String showExportForm(Model model) {
-        model.addAttribute("formAction", "/classroom/export"); // Đường dẫn cho nút Export
-        model.addAttribute("downloadAction", "/classroom/download"); // Đường dẫn cho nút Download
+        model.addAttribute("formAction", "/classroom/export");
+        model.addAttribute("downloadAction", "/classroom/download");
         return "export"; // Trả về tên file HTML cho trang export
     }
 
